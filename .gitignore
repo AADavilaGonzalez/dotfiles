@@ -1,0 +1,8 @@
+#Ignore All
+*
+
+!.gitignore
+
+#Configs to Track
+!nvim/
+!nvim/**
