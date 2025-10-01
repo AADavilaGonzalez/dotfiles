@@ -1,12 +1,16 @@
 return {
     "neovim/nvim-lspconfig",
     config = function()
-        vim.lsp.enable("pyright")
-        vim.lsp.enable("clangd")
-        vim.lsp.enable("lua_ls")
-        vim.lsp.enable("ts_ls")
-        vim.lsp.enable("html")
-        vim.lsp.enable("cssls")
-        vim.lsp.enable("jdtls")
+        vim.lsp.enable({
+            "pyright",  -- python
+            "clangd",   -- C and C++
+            "lua_ls",
+            "ts_ls",    -- TypeScript
+            "html",
+            "cssls",
+            "jdtls",    -- Java
+            "bashls",
+            "roslyn_ls" -- C#
+        })
     end,
 }
