@@ -1,3 +1,6 @@
+-- add lsp folder to package path to require badly behaving lsp configs
+package.path = package.path .. ";" .. vim.fn.stdpath("config") .. "/lsp/?.lua"
+
 return {
     "neovim/nvim-lspconfig",
     config = function()
@@ -12,5 +15,8 @@ return {
             "bashls",
             "roslyn_ls" -- C#
         })
+
+        -- force config to load on stuborn lsps
+        vim.lsp.config("roslyn_ls", require("roslyn_ls"))
     end,
 }
