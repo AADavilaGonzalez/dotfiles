@@ -5,15 +5,18 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
         vim.lsp.enable({
-            "pyright",  -- python
-            "clangd",   -- C and C++
+            "pyright",      -- python
+            "clangd",       -- C and C++
             "lua_ls",
-            "ts_ls",    -- TypeScript
+            "ts_ls",        -- TypeScript
             "html",
             "cssls",
-            "jdtls",    -- Java
+            "jdtls",        -- Java
             "bashls",
-            "roslyn_ls" -- C#
+            "roslyn_ls",    -- C#
+            "asm_lsp",      -- Assembly Languages
+            "dartls",
+            "rust_analyzer",
         })
 
         -- force config to load on stuborn lsps
