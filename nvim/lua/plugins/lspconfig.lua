@@ -17,6 +17,7 @@ return {
             "asm_lsp",      -- Assembly Languages
             "dartls",
             "rust_analyzer",
+            "astro",
         })
 
         -- force config to load on stuborn lsps
