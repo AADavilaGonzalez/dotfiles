@@ -27,3 +27,6 @@ vim.opt.writebackup = false
 vim.opt.swapfile = false
 
 vim.opt.signcolumn = "yes"
+
+vim.opt.foldlevelstart = 99
+vim.opt.foldlevel = 99
