@@ -1,6 +1,41 @@
 return {
     'nvim-treesitter/nvim-treesitter',
     lazy = false,
-    branch = 'main',
-    build = ':TSUpdate'
+    build = ':TSUpdate',
+    -- realign the module require gets called on
+    main = 'nvim-treesitter.configs',
+    opts = {
+      ensure_installed = {
+        "asm",
+        "astro",
+        "awk",
+        "bash",
+        "c",
+        "c_sharp",
+        "cpp",
+        "css",
+        "dart",
+        "dot",
+        "doxygen",
+        "html",
+        "java",
+        "javascript",
+        "json",
+        "kotlin",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "rust",
+        "sql",
+        "typescript",
+        "vim",
+        "vimdoc"
+      },
+      highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+      },
+    },
 }

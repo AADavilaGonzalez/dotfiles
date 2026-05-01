@@ -1,5 +1,5 @@
 -- add lsp folder to package path to require badly behaving lsp configs
-package.path = package.path .. ";" .. vim.fn.stdpath("config") .. "/lsp/?.lua"
+package.path = package.path .. ";" .. vim.fn.stdpath("config") .. "/after/lsp/?.lua"
 
 return {
     "neovim/nvim-lspconfig",

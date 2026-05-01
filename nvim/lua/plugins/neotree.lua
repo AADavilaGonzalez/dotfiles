@@ -1,5 +1,4 @@
 return {
-  {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     dependencies = {
@@ -13,10 +12,9 @@ return {
         },
     },
     keys = {
-        {"<leader>f", "<cmd>Neotree toggle<CR>", desc="toggle neo-tree"},
+        {"<leader>e", "<cmd>Neotree toggle<cr>", desc="toggle neo-tree"},
     },
     lazy = false, -- neo-tree will lazily load itself
-  }
 }
 
 
