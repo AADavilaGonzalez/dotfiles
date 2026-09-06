@@ -7,6 +7,7 @@ return {
         vim.lsp.enable({
             "pyright",      -- python
             "clangd",       -- C and C++
+            "ols",          -- Odin
             "lua_ls",
             "ts_ls",        -- TypeScript
             "html",
@@ -14,10 +15,10 @@ return {
             "jdtls",        -- Java
             "bashls",
             "roslyn_ls",    -- C#
-            "asm_lsp",      -- Assembly Languages
             "dartls",
             "rust_analyzer",
             "astro",
+            "zls",          --zig
         })
 
         -- force config to load on stuborn lsps
